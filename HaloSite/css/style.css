@@ -1,0 +1,196 @@
+body {
+  background: rgb(0, 92, 213);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+div.container {
+  width: 100%;
+}
+
+img.logo {
+  width: 220px;
+  height: 75px;
+}
+
+aside.cards {
+  width: 20%;
+  height: auto;
+  display: flex;
+  float: right;
+  display: block;
+}
+
+div.card {
+  max-width: 250px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 5px;
+  background: black;
+}
+
+a.btn {
+  background: forestgreen;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+img#imgCard {
+  width: 100%;
+  height: 70%;
+}
+
+div.card h4,
+div.card span {
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  color: forestgreen;
+}
+
+a.dec {
+  text-decoration: none;
+  list-style: none;
+  color: aliceblue;
+  font-size: 15px;
+}
+#deco {
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 2px;
+}
+a.dec:hover {
+  font-weight: bold;
+  font-size: 18px;
+  background: rgb(0, 109, 251);
+  transition: 500ms;
+}
+nav.navbar {
+  border: 3px dashed cyan;
+}
+
+header.cabecera {
+  position: relative;
+  width: 100%;
+  background: rgb(1, 47, 139);
+  border: 3px solid yellow;
+}
+
+ul {
+  display: flex;
+  float: right;
+  border: 3px dashed red;
+}
+
+div.port {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.portada {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+p.texto {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding: 4px;
+  text-align: center;
+  text-align: justify;
+  border: 3px solid black;
+}
+
+article.articulo {
+  width: 75%;
+  height: auto;
+  margin-left: 4px;
+  padding: 4px;
+  border: 2px solid crimson;
+  float: left;
+}
+
+footer.pie-pagina {
+  width: 100%;
+  padding-top: 10px;
+  color: white;
+  clear: both;
+  background: rgb(1, 47, 139);
+  text-align: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  article.articulo {
+    position: relative;
+    width: 65%;
+  }
+
+  p.texto {
+    width: auto;
+  }
+
+  aside.cards {
+    width: 30%;
+  }
+
+  div.card {
+    width: 350px;
+  }
+
+  footer.pie-pagina {
+    width: 100%;
+  }
+  .portada {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  p.texto {
+    width: auto;
+  }
+
+  article.articulo{
+    width: 98%;
+  }
+
+  .portada {
+    width: 80%;
+  }
+
+  aside.cards {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  div.card {
+    width: 350px;
+  }
+}
